@@ -1,11 +1,13 @@
 **🦉 A Machine Learning Approach to User Retention at Duolingo**
 
 **About Duolingo**
+
 Duolingo was founded in 2011 by Luis von Ahn and Severin Hacker with a mission that was both simple and ambitious: make language education free, accessible and fun for everyone. What started as a side project out of Carnegie Mellon University has grown into the world's most downloaded education app, with over 500 million registered users across more than 40 languages.
 The platform is built on a gamification model where users earn XP points, maintain daily streaks, compete in leagues and unlock achievements as they progress through bite-sized language lessons. This approach transformed what was once a dry academic exercise into something that feels closer to a mobile game than a classroom.
 Duolingo went public on the Nasdaq in July 2021 and today generates the majority of its revenue through Duolingo Super, a premium subscription that removes ads and unlocks additional features. This means user retention is not just a product goal but a direct revenue driver. Every user that stays is a potential subscriber. Every user that leaves is revenue that walks out the door.
 
 **The Business Problem**
+
 Despite its enormous user base, Duolingo faces a challenge that every consumer app eventually confronts: churn. A large portion of users who sign up never make it past the first 30 days. They download the app, complete a few lessons, lose their streak and quietly disappear.
 This pattern is costly. Acquiring a new user through marketing and app store visibility is expensive. Losing that user within a month means the acquisition cost was wasted entirely. Even a marginal improvement in 30-day retention translates into millions of dollars in retained subscription revenue and a healthier daily active user to monthly active user ratio, which is one of the most closely watched metrics by Duolingo's investors.
 The core question this project sets out to answer is:
@@ -14,11 +16,13 @@ The core question this project sets out to answer is:
 Answering this question gives Duolingo's product and growth teams the intelligence they need to intervene at the right moment, with the right message, for the right user.
 
 **My Role**
+
 I approached this project as a junior data analyst with a data science background. My responsibility was to take raw user behavioral data across sessions, notifications and engagement history and turn it into actionable intelligence that a product team could actually use.
 This was not just a modeling exercise. The goal was to tell a clear story with the data, one that starts with understanding who Duolingo's users are, moves through how they behave, and ends with a prediction engine that identifies at-risk users before they leave.
 The work covered the full analytical pipeline: data preparation, exploratory analysis, feature engineering, machine learning modeling and the translation of technical findings into plain language recommendations.
 
 **Dataset Overview**
+
 The dataset used in this project was synthetically generated to mirror the structure of a real Duolingo product analytics environment. It contains four interconnected tables that together paint a full picture of user behavior.
 | Table | Rows | Description |
 |---|---|---|
@@ -31,6 +35,7 @@ The dataset used in this project was synthetically generated to mirror the struc
 All four tables are connected through a shared user ID column. The combined master dataset used for analysis contains 500 users across 15 features after merging and feature engineering.
 
 **Tools and Libraries**
+
 | Tool or Library | Purpose |
 |---|---|
 | Python 3.10 | Core programming language |
