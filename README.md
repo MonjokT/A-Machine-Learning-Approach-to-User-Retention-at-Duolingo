@@ -148,8 +148,9 @@ Based on the full analysis the following actions are recommended for Duolingo's 
  * For users studying high-difficulty languages like Japanese and German, introducing an explicit difficulty acknowledgment and a more gradual progression curve in the early units could reduce early dropout caused by discouragement.
    
 **Project Structure:**
+
 duolingo-churn-analysis/
-│
+
 ├── duolingo_dataset.xlsx       # Full simulated dataset across 4 tables
 
 ├── churn_analysis.ipynb        # Full analysis notebook
@@ -158,8 +159,8 @@ duolingo-churn-analysis/
 
 **About Me:**
 
-I am a junior data analyst with a growing background in data science and machine learning. This project reflects my approach to analytical work: start with a real business question, let the data tell the story and translate findings into recommendations that non-technical stakeholders can act on.
-I am currently building my portfolio across EdTech, fintech and consumer app domains. Feel free to connect or reach out if you would like to discuss the work.
+I am a junior data analyst with a growing background in data science and machine learning,and a background in Civil Engineering. This project reflects my approach to analytical work, starting with a real business question, enabling the data tell the story and translate findings into recommendations that non-technical stakeholders can act on.
+I am currently building my portfolio across various domains, specifically Engineering,Edtech,Fintech,Consumer goods, Renewable energy and Sustainability. Feel free to connect or reach out if you would like to discuss the work.
 
 **NOTE:**
 
