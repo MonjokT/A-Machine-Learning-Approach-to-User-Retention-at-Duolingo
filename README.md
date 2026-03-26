@@ -1,3 +1,4 @@
+
 **🦉 A Machine Learning Approach to User Retention at Duolingo**
 
 **About Duolingo**
@@ -76,26 +77,33 @@ An XGBoost classifier was trained on 80 percent of the data and tested on the re
 **Overall Churn Rate:**
 Out of 500 users, 268 churned within 30 days and 232 remained active. This gives an overall churn rate of 53.6 percent. The dataset is well balanced between churned and retained users which is ideal for training a classification model.
 Insight: More than half of users leave within a month. This is not a minor retention issue. It is a structural problem that requires targeted intervention at the earliest stages of the user journey.
+<img width="540" height="393" alt="1000806775" src="https://github.com/user-attachments/assets/3182f1b8-14c2-46a3-9eec-07ab52d6b5d3" />
 
 **Churn by Country:**
 Korea recorded the highest churn rate followed by the United Kingdom, India, France, Japan, the United States, Mexico, Brazil, Germany and Australia.
 Insight: The variation across countries suggests that localization may be a factor. Users in markets where Duolingo has less cultural resonance or where competing language learning tools are more popular may be quicker to disengage.
+<img width="1189" height="590" alt="1000806776" src="https://github.com/user-attachments/assets/2d700933-26ce-4f66-9311-2b60aefc6e2e" />
 
 **Churn by Device Type:**
 Web users churned the most at 55.7 percent, followed by Android at 54.7 percent and iOS at 52.1 percent.
 Insight: Web users are the least committed. They are likely casual visitors who landed on the platform without the intentionality that comes with downloading an app. iOS users show marginally stronger retention, possibly due to the effectiveness of Apple's native notification system in re-engaging lapsed users.
+<img width="790" height="590" alt="1000806777" src="https://github.com/user-attachments/assets/7d62b4d3-c6c3-481a-9ee9-4c849daf13a1" />
 
 **Churn by Age Group:**
 Users aged 45 and above showed the highest churn rate. This was followed by the 18 to 24 age group, then 13 to 17 year olds, with the 25 to 34 and 35 to 44 groups showing the strongest retention.
 Insight: The 25 to 34 and 35 to 44 segments are Duolingo's most loyal users. These are people who are learning a language with a clear purpose, whether for career advancement, travel or relocation. That sense of personal motivation keeps them coming back. Younger users are more easily distracted and older users may find the gamified format less intuitive or engaging.
+<img width="790" height="590" alt="1000806780" src="https://github.com/user-attachments/assets/a0cc8331-e6fe-4347-9857-e646ff234f1b" />
 
 **Churn by Language Studied:**
 Japanese showed the highest churn rate followed by German, Portuguese, French, Korean, Italian, Mandarin and Spanish which had the lowest churn rate.
 Insight: Language difficulty is a churn driver. Japanese and German are among the most structurally complex languages for English speakers. Users who hit a difficulty wall early and feel like they are not progressing are more likely to disengage. Spanish, on the other hand, benefits from widespread cultural familiarity particularly in the United States, which keeps motivation higher for longer.
+<img width="790" height="590" alt="1000806781" src="https://github.com/user-attachments/assets/110eed5c-614d-4f88-b483-4d7a8508c6b0" />
+
 
 **Churn by League Tier:**
 The top three league tiers by churn count were Bronze at 35.9 percent, Silver at 35.2 percent and Gold at 29.0 percent. Together Bronze and Silver account for 71 percent of all churned users.
 Insight: Early league placement is a significant churn risk. New users placed in competitive environments before they have built confidence or habits are more likely to feel discouraged and leave. Duolingo should consider a more gradual competitive ramp-up for new users to give them time to develop engagement before introducing pressure.
+<img width="575" height="590" alt="1000806782" src="https://github.com/user-attachments/assets/0687ba64-0328-4082-9862-fd06a83519d4" />
 
 **Streak Length vs Churn:**
 Users who stayed had an average maximum streak of 8 days. Users who churned had an average maximum streak of just 3.1 days.
@@ -104,6 +112,8 @@ Insight: This is the single most important finding in the entire analysis. Getti
 **Notification Open Rate vs Churn:**
 Users who stayed opened their notifications at a higher rate than users who churned. This confirms that push notifications are an effective retention tool when users engage with them.
 Insight: Notifications work, but only if users open them. The challenge is sending the right type of notification at the right moment. Streak reminders and streak freeze offers sent within the first hour of a missed session show the strongest potential for re-engagement.
+<img width="789" height="590" alt="1000806783" src="https://github.com/user-attachments/assets/40dd4631-0b24-45da-8490-33979fd51e73" />
+
 
 **Correlation Matrix:**
 The correlation analysis revealed several notable relationships. Total sessions and total XP showed a very strong correlation of 0.98, meaning they are essentially measuring the same user behavior. Maximum streak and average streak were also highly correlated. Notification count and open rate showed a moderate correlation of 0.78.
@@ -132,6 +142,9 @@ The model correctly identified 75 out of 100 users as either churned or retained
 |---|---|---|
 | Actually Stayed | 34 correct | 12 wrong |
 | Actually Churned | 13 wrong | 41 correct |
+
+<img width="644" height="553" alt="1000806784" src="https://github.com/user-attachments/assets/bb71a93d-250f-46a2-9820-9f7477d7ee7a" />
+
 The model caught 41 out of 54 users who actually churned. Only 13 churned users slipped through undetected. This is a strong result given the dataset size and confirms the model is well calibrated for the problem it is solving.
 
 **Feature Importance:**
@@ -139,6 +152,8 @@ The three most important features driving churn predictions were total XP earned
  * Total XP was the strongest predictor. Users who accumulated very little XP barely engaged with the platform before leaving. Low XP is essentially a signal of minimal investment.
  * Language studied confirmed the EDA finding that harder languages drive higher churn. The model learned to weight language difficulty as a meaningful signal.
  * Device type reinforced the finding that web users are the most at-risk segment. The model identified device context as an early behavioral signal worth acting on.
+   <img width="989" height="790" alt="1000806785" src="https://github.com/user-attachments/assets/5681c737-2219-4276-bed3-7e89c5c5ac06" />
+
 
 **Key Recommendations:**
 Based on the full analysis the following actions are recommended for Duolingo's product and growth teams:
